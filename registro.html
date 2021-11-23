@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/form_style.css">
+    <title>Sing-up</title>
+</head>
+<body>
+    
+    <header>
+        <img src="./assets/imgs/logo_header.png" alt="" class="header-img">  
+    </header>
+    
+    <main>
+        
+        <h1 class="title">Venda online con Outfit a la Mano</h1>
+        <h2 class="subtitle">¿Ya tienes una cuenta? <span id="sing-in">Iniciar sesión</span></h2>
+        
+        <div class="main-container">
+
+            <section class="information main-item">
+                <p class="information-paragraph">Outfit a la Mano es una solución de comercio electrónico asequible con multitud de características que incluyen tiendas web, móviles y sociales. 
+                </p>
+                <img src="./assets/imgs/undraw_shopping.png" alt="" class="information-img">
+            </section>
+    
+    
+            <section class="registry-section main-item">
+
+                <div class="form-container">
+
+                    <form id="user-form" class="form" action="./index.html">
+                        <div class="form-box">
+                            <label for="nickName">Name</label>
+                            <input type="text" name="nickName" id="nickName" placeholder="Escribe tu nombre">
+                            <small class="error-text">Introduce un nombre</small>
+                        </div>
+                        
+                        <div class="form-box">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="info@servidor.com">
+                            <small class="error-text">Introduce un email valido</small>
+                        </div>
+        
+                        <div class="form-box">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" placeholder="Escribe tu contraseña">
+                            <small class="error-text">Introduce una contraseña de más de 6 caracteres
+                            </small>
+                        </div>
+    
+                        <div class="form-box">
+                            <label for="confirmPassword">Confirmar Password</label>
+                            <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Escribe tu contraseña">
+                            <small class="error-text">Las contraseñas no coinciden
+                            </small>
+                        </div>
+        
+                        <button type="submit" id="submit-btn" disabled>Enviar</button>
+                    </form>
+
+                </div>
+
+            </section>
+
+        </div>
+    
+    </main>
+
+    <footer>
+        <p>Al registrarse, acepta nuestros <span onclick="return_index()">condiciones de uso y política de confidencialidad</span></p>
+    </footer>
+    <script src="./assets/scripts/form_validation.js"></script>
+    <script src="./assets/scripts/redirection.js"></script>
+</body>
+</html>

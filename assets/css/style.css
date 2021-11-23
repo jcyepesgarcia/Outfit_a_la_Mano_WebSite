@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+@import url('./landing_style/header_style.css');
+@import url('./landing_style/feature_style.css');
+@import url('./landing_style/feature_g_shopping_style.css');
+@import url('./landing_style/testimony_style.css');
+@import url('./landing_style/footer_style.css');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+

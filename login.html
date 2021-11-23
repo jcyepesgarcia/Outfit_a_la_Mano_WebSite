@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/login_style.css">
+    <title>Sign-in</title>
+</head>
+<body>
+    
+    <header>
+        <img src="./assets/imgs/logo_header.png" alt="" class="logo"> 
+    </header>
+    
+    <main>
+        
+        <h1 class="title">Feliz de verte de nuevo</h1>
+        <h2 class="subtitle">¿No tienes una cuenta? <span id="sign-up">Regístrate</span></h2>
+
+        <section class="registry-section">
+            <form id="user-form" class="form" action="./index.html">
+                <div class="form-box">
+                    <label for="nickName">Name</label>
+                    <input type="text" name="nickName" id="nickName" placeholder="Escribe tu nombre">
+                    <small class="error-text">Introduce un nombre</small>
+                </div>
+                
+                <div class="form-box">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="info@servidor.com">
+                    <small class="error-text">Introduce un email valido</small>
+                </div>
+
+                <div id="remember-me">
+                    <input type="checkbox" name="remember-me" id="remember-me">
+                    <label for="remember-me">Recuérdame</label>
+                </div>
+                <span id="rememberPassword">¿Has olvidado tu contraseña?</span>
+
+                
+                <button type="submit" id="submit-btn" disabled>Enviar</button>
+            </form>
+        </section>
+    
+    </main>
+
+    <script src="./assets/scripts/signIn_validation.js"></script>
+
+</body>
+</html>

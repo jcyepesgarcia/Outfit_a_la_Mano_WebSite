@@ -1,0 +1,82 @@
+header{    
+    height: 100vh;
+    border: 1px solid black;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(245, 246, 252, 0.158),
+        rgba(2, 2, 2, 0.788)
+    ),url('../../imgs/fondo1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
+    color: #fff;
+    padding-bottom: 150px;
+}
+
+nav {
+    display: flex;
+    justify-content:space-between;
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+}
+
+.nav-title{
+    flex: 1;
+}
+
+nav ul{
+    flex: 1;
+    padding-inline-start: 0;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: right;
+}
+
+nav li{
+    flex: 1;
+    list-style: none;
+    font-size: 18px;
+    font-weight:bold;
+    cursor: pointer;
+    margin:auto;
+    border-radius: 30px;
+}
+
+.close-icon, .menu-icon{
+    display: none;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 180px 0;
+}
+
+.hero-title{
+    font-size: 36px;
+    text-align: center;
+}
+
+.hero-paragraph{
+    width: 80%;
+    padding: 50px 0;
+    text-align: justify;
+}
+
+.btn-registro{
+    background: #5f2c82;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #49a09d, #5f2c82);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #49a09d, #5f2c82); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-size: 1.2em;
+    font-weight:bold;
+    color: #fff;
+    padding: 15px 25px;
+    margin: auto;
+    border-radius: 30px;
+    border: 1px solid #fff;
+    cursor: pointer; 
+}
